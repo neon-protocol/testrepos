@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#This script will remove the following default Ubuntu 20.04 apps:
+##GNOME Mahjongg, Mines, Sudoku, Aisleriot Solitair and, Cheese.
+
+echo "Hello, this script will remove the following applications:
+-GNOME Mahjongg
+-GNOME Mines
+-GNOME Sudoku
+-Aisleriot Solitair
+-Cheese."
+
+echo -n "Are you sure you want to remove these programs? Y/N"
+echo
+read answer
+if [ "$answer" != "${answer#[Yy]}" ] ;then
+
+	echo -n "Second response from yes"
+	echo
+	read answer
+	if [ "$answer" != "${answer#[Yy]}" ] ;then
+
+		echo "YEET"
+
+	else
+		echo "YEETYEET"
+
+	fi
+
+echo "**Applications successfully removed!"
+
+else
+   echo "**Okay, they'll stay put."
+fi
