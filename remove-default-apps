@@ -20,6 +20,7 @@ sudo apt-get remove --purge gnome-mahjongg -y
 sudo apt-get remove --purge gnome-mines -y
 sudo apt-get remove --purge gnome-sudoku -y
 sudo apt-get remove --purge cheese -y
+sudo apt-get autoremove
 
 echo "**Applications successfully removed!"
 
