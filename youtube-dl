@@ -1,0 +1,11 @@
+#!/bin/sh
+answer=""
+tput clear
+tput cup 05 10
+echo "Give the YouTube URL: \c"
+# Here you paste the YT-video-URL by ctrl+shift+V
+read answer
+# The follwing command will display a list of video quality options to choose from.
+youtube-dl -o "/home/lance/DatabankUpload/Videos/Youtube/%(title)s.%(ext)s" $answer
+exit 0
+fi

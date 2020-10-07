@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#This script installs all the things that I like onto Ubuntu 20.04
+
+#Preload daemon install. Improves boot times by learning user behavior.
+sudo apt-get install preload
+
+#apt-fast. Downloads updates from multiple sources to make updating more speedy.
+sudo add-apt-repository ppa:apt-fast/stable
+sudo apt-get update
+sudo apt-get install apt-fast -y
+
+#Gnome-tweaks. Ubuntu interface editor. Run with command: gnome-tweaks
+sudo apt-get install gnome-tweaks -y
+
+#Pass. Encrypted password manager. Needs a GPG program.
+sudo apt-get install pass -y
+
+#Locate. Locates directories and files containing the entered keyword.
+sudo apt-get install locate -y
+
+#Unzip. ...Unzips... stuff...
+sudo apt-get install unzip -y
+
+#Locate locates files
+sudo apt-get install mlocate -y

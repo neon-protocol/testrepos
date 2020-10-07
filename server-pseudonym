@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo ssh -l pseudonym 192.200.96.18
